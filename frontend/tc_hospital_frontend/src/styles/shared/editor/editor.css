@@ -1,0 +1,234 @@
+.code_input {
+    width: 70%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: white;
+    padding: 1.5%;
+    border: none;
+    resize: none;
+    font-size: 1.1em;
+    font-weight: 200;
+    font-family: "Helvetica";
+    line-height: 150%;
+    text-align: justify;
+    overflow: scroll;
+    position: relative;
+}
+
+.code_input:focus {
+    outline: none;
+}
+
+.code_input[placeholder]:empty:before {
+    content: attr(placeholder);
+    color: #555;
+}
+
+.code_input[placeholder]:empty:focus:before {
+    content: "";
+}
+
+.enlarged_code_input {
+    border-radius: 12px;
+    height: 97.5%;
+    background-color: rgba(241, 241, 241, 0.6);
+}
+
+#tooltip_editor_wrapper {
+    position: absolute;
+    padding: 1% 3% 1% 3%;
+    background-color: #505DF7;
+    border-radius: 8px;
+    display: none;
+}
+
+#tooltip_editor_wrapper::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #505DF7 transparent transparent transparent;
+}
+
+.tooltip_btn {
+    font-size: 0.8em;
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+/* ================================= */
+
+.code_display {
+    width: 28.5%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: white;
+    position: relative;
+    overflow: scroll;
+    padding: 0.5%;
+}
+
+#internal_code_display {
+    width: 100%;
+    position: relative;
+}
+
+#internal_left_code_display {
+    width: 47.5%;
+    position: relative;
+}
+
+#internal_right_code_display {
+    width: 47.5%;
+    position: relative;
+}
+
+#internal_code_separator {
+    height: 100%;
+    width: 1px;
+    background-color: white;
+}
+
+.internal_code_desc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0.7em;
+    padding: 2% 10% 2% 10%;
+    background-color: #505DF7;
+    border-radius: 8px;
+    color: white;
+}
+
+.enlarged_code_display {
+    border-radius: 12px;
+    height: 97.5%;
+    background-color: rgba(241, 241, 241, 0.6);
+}
+
+.split_code_display {
+    display: flex;
+    justify-content: space-between;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.empty_editor {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+    font-weight: 200;
+}
+
+/* code display */
+.ind_code_display {
+    width: 100%;
+    height: 7.5vh;
+    border-radius: 6px;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.3s ease-in-out;
+}
+
+.ind_code_display:hover {
+    z-index: 100;
+    transition: 0.3s ease-in-out;
+}
+
+.small_code_section {
+    width: 25%;
+    height: 80%;
+    border-radius: 6px;
+    background-color: rgba(241, 241, 241, 0.6);
+    border: none;
+    text-align: center;
+}
+
+.split_small_code_section {
+    font-size: 0.7em;
+}
+
+.large_code_section {
+    width: 60%;
+    height: 80%;
+    border-radius: 6px;
+    border: none;
+    padding-left: 1%;
+    font-size: 0.8em;
+    font-weight: 200;
+}
+
+.split_large_code_section {
+    font-size: 0.7em;
+}
+
+.large_code_section:focus {
+    outline: none;
+}
+
+.medium_code_section {
+    width: 47.5%;
+}
+
+.remove_code_btn {
+    width: 6.5%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+/* =============================== */
+
+.editor_submit_btn {
+    width: 17.5%;
+    height: 70%;
+    border-radius: 12px;
+    margin-right: 1.5%;
+    cursor: pointer;
+    border: 1px solid rgba(241, 241, 241, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+    font-size: 0.8em;
+}
+
+.highlighted_editor_submit_btn {
+    background-color: #505DF7;
+    color: white;
+    border-color: #505DF7;
+}
+
+/* ============================== */
+
+.student_compare_btn {
+    position: sticky;
+    bottom: 0%;
+    background-color: #505DF7;
+    border-radius: 12px;
+    width: 100%;
+    height: 7.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    font-size: 0.8em;
+}

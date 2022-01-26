@@ -1,0 +1,70 @@
+.invite_section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    position: relative;
+    padding: 0 2.5% 0 2.5%;
+
+}
+
+/* invite user styling */
+.radio_create {
+    display: none;
+}
+
+.radio_label {
+    width: 47.5%;
+    height: 8%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #4B4B4B;
+    cursor: pointer;
+    font-weight: 200;
+    margin: 1.5% 0 1.5% 0;
+    opacity: 0.5;
+}
+
+.radio_create:checked + label {
+    background-color: white;
+    opacity: 1;
+}
+
+.create_input_invite_admin {
+    width: 100%;
+    height: 8%;
+    border-radius: 8px;
+    background-color: white;
+    border: none;
+    padding: 0 2.5% 0 3%;
+    margin: 1.5% 0 1.5% 0;
+    border: 1px solid #4B4B4B;
+}
+
+.create_input_invite_admin:focus {
+    outline: none;
+}
+
+.horizontal_divider {
+    background-color: #4B4B4B;
+    width: 100%;
+    height: 1px;
+    margin: 4% 0 4% 0;
+}
+
+.create_submit_invite_admin {
+    width: 100%;
+    height: 8%;
+    border-radius: 8px;
+    border: none;
+    padding: 0 2.5% 0 3%;
+    margin: 1.5% 0 1.5% 0;
+    background-color: #505DF7;
+    color: white;
+    cursor: pointer;
+}

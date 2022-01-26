@@ -1,0 +1,130 @@
+.menu_dark_bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px 0 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+.create_input_wrapper {
+    width: 70%;
+    height: 65vh;
+    background-color: white;
+    border-radius: 12px;
+    margin-top: 150vh;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.enlarged_create_input_wrapper {
+    width: 97.5%;
+    height: 95%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.create_input_hide {
+    position: absolute;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: -1.5vh;
+    right: -1.5vh;
+    background-color: white;
+    color: #505DF7;
+    font-size: 0.8em;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    z-index: 10;
+}
+
+.create_desc {
+    font-size: 1em;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5vh;
+    padding: 0 3% 0 3%;
+    border-radius: 12px 0 12px 0;
+    border: 1px solid rgba(241, 241, 241, 0.6);
+    display: flex;
+    align-items: center;
+}
+
+.create_input {
+    width: 70%;
+    height: 8vh;
+    border-radius: 12px;
+    background-color: rgba(241, 241, 241, 0.6);
+    border: none;
+    padding: 0 2.5% 0 2.5%;
+    font-size: 0.9em;
+    font-weight: 200;
+    margin: 0.5% 0 2.5% 0;
+    text-align: center;
+}
+
+.create_btn_wrapper {
+    width: 70%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(241, 241, 241, 0.6);
+    border-radius: 12px;
+    margin: 0.5% 0 0.5% 0;
+}
+
+.create_input_radio {
+    display: none;
+}
+
+.create_btn_label {
+    width: 27.5%;
+    border-radius: 12px;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.create_btn_label_ext {
+    width: 45%;
+}
+
+.create_input_radio:checked + label {
+    background-color: white;
+    color: #505DF7;
+}
+
+.create_submit {
+    width: 70%;
+    height: 8vh;
+    border-radius: 12px;
+    border: none;
+    background-color: #505DF7;
+    color: white;
+    font-size: 0.9em;
+    font-weight: 200;
+    margin: 2.5% 0 1.5% 0;
+    cursor: pointer;
+}

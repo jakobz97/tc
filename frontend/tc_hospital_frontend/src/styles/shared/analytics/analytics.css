@@ -1,0 +1,11 @@
+.analytics_review_wrapper {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    overflow: scroll;
+}
+
+
